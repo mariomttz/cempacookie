@@ -19,3 +19,18 @@ menuPagesLinks.addEventListener('click', () => {
     menu.style.transitionDelay = '0.5s';
     menu.classList.remove('active');
 })
+
+// Slider
+const slider = document.querySelector('.products');
+const leftBtn = document.getElementById('left-btn');
+const rightBtn = document.getElementById('right-btn');
+
+// Scroll to the left
+leftBtn.addEventListener('click', () => {
+    slider.scrollLeft -= slider.offsetWidth;
+})
+
+// Scroll to the right
+rightBtn.addEventListener('click', () => {
+    slider.scrollLeft += slider.offsetWidth;
+})
