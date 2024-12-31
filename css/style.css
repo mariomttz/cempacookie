@@ -227,13 +227,108 @@ body {
 }
 
 .product-img img {
-  width: 100%;
+  width: 55%;
   transform: scale(1.1);
   transition: all 0.3s;
 }
 
 .product-container:hover .product-img img {
   transform: scale(1.15);
+}
+
+#services {
+  height: 100vh;
+  padding: 40px;
+  background: #fff;
+}
+
+.services-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 30px;
+  grid-template-areas: "service1 image service2" "service3 image service4";
+  margin-top: 30px;
+}
+
+.quality {
+  grid-area: service1;
+}
+
+.ingredients {
+  grid-area: service2;
+}
+
+.speed {
+  grid-area: service3;
+}
+
+.delivery {
+  grid-area: service4;
+}
+
+.services-img {
+  grid-area: image;
+  transition: all 0.5s;
+}
+
+.services-img:hover {
+  transform: scale(1.1);
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.items span {
+  width: 95px;
+  font-size: 40px;
+  padding: 20px;
+  border: 5px double #dedede;
+  border-radius: 50%;
+  color: var(--secondary-color);
+  transition: all 0.5s;
+}
+
+.items span:hover {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.quality span,
+.speed span {
+  color: var(--primary-color);
+}
+
+.quality span:hover,
+.speed span:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.items .item-title {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.items .item-description {
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  padding: 0 20px;
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 650px) {
@@ -288,7 +383,7 @@ body {
   }
 
   .product-img {
-    width: 65%;
+    width: 100%;
   }
 
   .product-info h1 {
@@ -316,5 +411,19 @@ body {
 
   .product-info .btn:hover {
     padding: 10px 30px;
+  }
+
+  .product-img {
+    width: 100%;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "service1 service2" "service3 service4";
+    margin-top: 50px;
+  }
+
+  .services-img {
+    display: none;
   }
 }
