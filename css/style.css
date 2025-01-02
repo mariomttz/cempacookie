@@ -331,6 +331,134 @@ body {
   color: var(--text-color);
 }
 
+#staff {
+  display: flex;
+  height: 100vh;
+}
+
+.chef {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.chef:hover {
+  flex-grow: 1.5;
+}
+
+.chef-img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: grayscale(60%);
+}
+
+.chef:hover .chef-img {
+  filter: grayscale(0%);
+}
+
+.chef-info {
+  width: 100%;
+  bottom: 10px;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.1s;
+}
+
+.chef:hover .chef-info {
+  bottom: 60px;
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+.chef-info h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px 3px rgb(245, 185, 125, 0.8);
+}
+
+.chef-info p {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+  text-shadow: 2px 2px 3px rgb(245, 185, 125, 0.8);
+}
+
+.chef-social-networks a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  font-size: 18px;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--secondary-color);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.chef-social-networks a:hover {
+  color: var(--secondary-color);
+  background: transparent;
+  transform: scale(2);
+}
+
+#characteristics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.characteristic {
+  height: 250px;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.characteristic-img {
+  height: 130%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.characteristic-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+
+.characteristic-info:hover {
+  background: rgb(0, 0, 0, 0.25);
+}
+
+.characteristic-info p {
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.characteristic-info:hover p {
+  transform: translateY(10px);
+}
+
 @media screen and (max-width: 650px) {
   .main-menu {
     position: fixed;
@@ -392,6 +520,10 @@ body {
 
   .product-info h2 {
     font-size: 3vw;
+  }
+
+  .characteristic-info .characteristic-description {
+    display: none;
   }
 }
 
