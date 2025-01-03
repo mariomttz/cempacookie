@@ -30,9 +30,9 @@
 
         <nav class="pages" id="pages">
           <ul>
-            <li><a href="">Productos</a></li>
-            <li><a href="">Equipo</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#staff">Equipo</a></li>
+            <li><a href="#contact">Contacto</a></li>
           </ul>
         </nav>
 
@@ -347,6 +347,121 @@
         </div>
       </div>
     </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="contact-titles">
+        <h2 class="subtitle">¿Qué opinas de nuestros productos?</h2>
+        <h1 class="title">¡Contáctanos!</h1>
+      </div>
+
+      <form action="" id="contact-form">
+        <div class="form-group">
+          <div class="input-group">
+            <input
+              type="text"
+              id="first-name"
+              placeholder="Nombre(s)"
+              name="first-name"
+              class="input-name"
+              autofocus
+            />
+            <i class="fas fa-user"></i>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Apellido(s)"
+              name="last-name"
+              class="input-name"
+            />
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Correo electrónico"
+              name="email"
+              class="input-email"
+            />
+            <i class="fas fa-envelope"></i>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Teléfono"
+              name="phone"
+              class="input-phone"
+            />
+            <i class="fas fa-phone"></i>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <div class="input-group message">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Escríbenos tu mensaje aquí"
+              class="input-message"
+            ></textarea>
+            <i class="fas fa-comment"></i>
+          </div>
+        </div>
+
+        <div class="form-btn">
+          <input type="submit" value="Enviar" class="btn submit-btn" />
+        </div>
+      </form>
+    </section>
+
+    <!-- Contact form alerts -->
+    <div class="contact-alerts">
+      <div id="success" class="contact-alert hide">
+        <span class="alert-icon fas fa-check-circle"></span>
+        <span class="alert-message"
+          >¡Mensaje enviado exitosamente! Gracias por contactarnos.</span
+        >
+      </div>
+
+      <div id="error" class="contact-alert hide">
+        <span class="alert-icon fas fa-exclamation-circle"></span>
+        <span class="alert-message"
+          >¡Error! Por favor, llena todos los campos correctamente.</span
+        >
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-info">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      </div>
+
+      <div class="footer-info">
+        <i class="fas fa-envelope"></i>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      </div>
+
+      <div class="footer-info">
+        <i class="fas fa-phone"></i>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      </div>
+
+      <div class="footer-info">
+        <i class="fab fa-youtube"></i>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      </div>
+    </footer>
   </body>
 
   <!-- Own Scripts -->

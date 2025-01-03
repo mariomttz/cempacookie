@@ -34,3 +34,47 @@ leftBtn.addEventListener('click', () => {
 rightBtn.addEventListener('click', () => {
     slider.scrollLeft += slider.offsetWidth;
 })
+
+// Contact form
+const form = document.getElementById('contact-form');
+const successAlert = document.getElementById('success');
+const errorAlert = document.getElementById('error');
+
+function validateForm(e) {
+    const firstName = document.getElementById('first-name').value;
+    const lastName = document.getElementById('last-name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+
+    if (firstName == 0 || lastName == 0 || email == 0 || phone == 0 || message == 0) {
+        e.preventDefault();
+        errorAlert.classList.remove('hide');
+        errorAlert.classList.add('show');
+
+        setTimeout(() => {
+            errorAlert.classList.remove('show');
+            errorAlert.classList.add('hide');
+        }, 2000);
+    } 
+    
+    else {
+        e.preventDefault();
+        successAlert.classList.remove('hide');
+        successAlert.classList.add('show');
+
+        setTimeout(() => {
+            successAlert.classList.remove('show');
+            successAlert.classList.add('hide');
+        }
+        , 2000);
+        
+        firstName.value = '';
+        lastName.value = '';
+        email.value = '';
+        phone.value = '';
+        message.value = '';
+    }
+}
+
+form.addEventListener('submit', validateForm);
