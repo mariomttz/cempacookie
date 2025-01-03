@@ -56,9 +56,7 @@ function validateForm(e) {
             errorAlert.classList.remove('show');
             errorAlert.classList.add('hide');
         }, 2000);
-    } 
-    
-    else {
+    } else {
         e.preventDefault();
         successAlert.classList.remove('hide');
         successAlert.classList.add('show');
@@ -68,7 +66,7 @@ function validateForm(e) {
             successAlert.classList.add('hide');
         }
         , 2000);
-        
+
         firstName.value = '';
         lastName.value = '';
         email.value = '';
@@ -78,3 +76,41 @@ function validateForm(e) {
 }
 
 form.addEventListener('submit', validateForm);
+
+// To top button
+const toTopBtn = document.getElementById('top-btn');
+const toTopLogo = document.getElementById('logo');
+
+window.addEventListener('scroll', () => {
+    const scroll = document.documentElement.scrollTop;
+    const pageHeight = document.documentElement.offsetHeight;
+    const clientHeight = document.documentElement.clientHeight;
+
+    if (scroll > 100) {
+        toTopBtn.classList.add('show');
+    } else {
+        toTopBtn.classList.remove('show');
+    }
+
+    if (scroll + clientHeight >= pageHeight) {
+        toTopBtn.classList.add('bottom');
+    } else {
+        toTopBtn.classList.remove('bottom');
+    }
+});
+
+// Scroll to top when clicking on the button
+toTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Scroll to top when clicking on the logo
+toTopLogo.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

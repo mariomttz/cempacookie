@@ -672,6 +672,45 @@ footer {
   transform: translateY(0);
 }
 
+#top-btn.show {
+  transform: translateY(0);
+}
+
+#top-btn.bottom {
+  transform: translateY(-250%);
+}
+
+#top-btn {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+  z-index: 1;
+  transform: translateY(200%);
+  transition: all 0.5s;
+}
+
+#top-btn:hover {
+  background: var(--secondary-color);
+}
+
+#top-btn span {
+  width: 100%;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+#top-btn span:hover {
+  transform: translateY(-3px);
+}
+
 @media screen and (max-width: 650px) {
   .main-menu {
     position: fixed;
@@ -766,6 +805,10 @@ footer {
 
   .footer-info {
     width: 50%;
+  }
+
+  #top-btn {
+    display: none;
   }
 }
 
