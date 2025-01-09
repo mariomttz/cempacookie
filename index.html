@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Cempacookie</title>
 
-    <!-- CSS -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon" />
+
+    <!-- Own Styles -->
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Font Awesome -->
@@ -15,9 +19,500 @@
     />
   </head>
   <body>
-    <h1>Cempacookie</h1>
+    <!-- Top button -->
+    <div id="top-btn">
+      <span class="fas fa-angle-up"></span>
+    </div>
+
+    <!-- Main menu -->
+    <div class="main-menu">
+      <div class="logo" id="logo">
+        <img src="img/logo.webp" alt="Logo Cempacookie" />
+      </div>
+
+      <div class="menu" id="menu">
+        <i class="fas fa-angle-right" id="close-menu-btn"></i>
+
+        <nav class="pages" id="pages">
+          <ul>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#staff">Equipo</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="social-networks">
+          <a href="#"><span class="fab fa-facebook"></span></a>
+          <a
+            href="https://www.instagram.com/mttz.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="fab fa-instagram"></span
+          ></a>
+          <a href="#"><span class="fab fa-twitter"></span></a>
+          <a href="#"><span class="fab fa-youtube"></span></a>
+        </div>
+      </div>
+
+      <i class="fas fa-bars" id="open-menu-btn"></i>
+    </div>
+
+    <!-- Slider -->
+    <section id="slider">
+      <div class="slider-container">
+        <button id="left-btn"><span class="fas fa-angle-left"></span></button>
+
+        <div class="products">
+          <div class="product-container">
+            <div class="product-info">
+              <h2>Producto <b>premium</b></h2>
+              <h1>Pay de queso</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                quod, voluptates, quae, quos quia quibusdam.
+              </p>
+              <button class="btn">
+                ¡Cómpralo aquí!<span class="fas fa-angle-right"></span>
+              </button>
+            </div>
+
+            <div class="product-img">
+              <img src="img/slider/cheesecake.webp" alt="Pay de queso" />
+            </div>
+          </div>
+
+          <div class="product-container">
+            <div class="product-info">
+              <h2>Producto <b>básico</b></h2>
+              <h1>Pastel de chocolate</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                quod, voluptates, quae, quos quia quibusdam.
+              </p>
+              <button class="btn">
+                ¡Cómpralo aquí!<span class="fas fa-angle-right"></span>
+              </button>
+            </div>
+
+            <div class="product-img">
+              <img
+                src="img/slider/chocolate_cake.webp"
+                alt="Pastel de chocolate"
+              />
+            </div>
+          </div>
+
+          <div class="product-container">
+            <div class="product-info">
+              <h2>Producto <b>premium</b></h2>
+              <h1>Pastel de zanahoria</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                quod, voluptates, quae, quos quia quibusdam.
+              </p>
+              <button class="btn">
+                ¡Cómpralo aquí!<span class="fas fa-angle-right"></span>
+              </button>
+            </div>
+
+            <div class="product-img">
+              <img
+                src="img/slider/carrot_cake.webp"
+                alt="Pastel de zanahoria"
+              />
+            </div>
+          </div>
+
+          <div class="product-container">
+            <div class="product-info">
+              <h2>Producto <b>especial</b></h2>
+              <h1>Pay de limón</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                quod, voluptates, quae, quos quia quibusdam.
+              </p>
+              <button class="btn">
+                ¡Cómpralo aquí!<span class="fas fa-angle-right"></span>
+              </button>
+            </div>
+
+            <div class="product-img">
+              <img src="img/slider/lemon_pie.webp" alt="Pay de limón" />
+            </div>
+          </div>
+
+          <div class="product-container">
+            <div class="product-info">
+              <h2>Producto <b>básico</b></h2>
+              <h1>Cupcake de fresa</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                quod, voluptates, quae, quos quia quibusdam.
+              </p>
+              <button class="btn">
+                ¡Cómpralo aquí!<span class="fas fa-angle-right"></span>
+              </button>
+            </div>
+
+            <div class="product-img">
+              <img
+                src="img/slider/strawberry_cupcake.webp"
+                alt="Cupcake de fresa"
+              />
+            </div>
+          </div>
+        </div>
+
+        <button id="right-btn"><span class="fas fa-angle-right"></span></button>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="services-titles">
+        <h2 class="subtitle">Postres y panadería de alta calidad</h2>
+        <h1 class="title">¡Bienvenidos a Cempacookie!</h1>
+      </div>
+
+      <div class="services-container">
+        <div class="services-img">
+          <img
+            src="img/halves_cake.webp"
+            alt="Imagen de un pastel donde una mitad es de saber chocolate y la otra de fresa"
+          />
+        </div>
+
+        <div class="items quality">
+          <p><span class="fas fa-bread-slice"></span></p>
+          <p class="item-title">Calidad</p>
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod,
+            voluptates, quae, quos quia quibusdam.
+          </p>
+        </div>
+
+        <div class="items ingredients">
+          <p><span class="fas fa-apple-alt"></span></p>
+          <p class="item-title">Ingredientes</p>
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod,
+            voluptates, quae, quos quia quibusdam.
+          </p>
+        </div>
+
+        <div class="items speed">
+          <p><span class="fas fa-clock"></span></p>
+          <p class="item-title">Rapidez</p>
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod,
+            voluptates, quae, quos quia quibusdam.
+          </p>
+        </div>
+
+        <div class="items delivery">
+          <p><span class="fas fa-shipping-fast"></span></p>
+          <p class="item-title">Entrega</p>
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod,
+            voluptates, quae, quos quia quibusdam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Staff -->
+    <section id="staff">
+      <div class="chef">
+        <img
+          src="img/staff/chef_mariana.webp"
+          alt="Imagen de la chef Mariana Gonzales"
+          class="chef-img"
+        />
+
+        <div class="chef-info">
+          <h2>Mariana Gonzales</h2>
+          <p>Chef Ejecutivo de Panadería</p>
+
+          <div class="chef-social-networks">
+            <a href="#"><span class="fab fa-facebook"></span></a>
+            <a
+              href="https://www.instagram.com/mttz.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="fab fa-instagram"></span
+            ></a>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a
+              href="https://www.linkedin.com/in/mariomttz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="fab fa-linkedin-in"></span
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="chef">
+        <img
+          src="img/staff/chef_emiliano.webp"
+          alt="Imagen del chef Emiliano Sánchez"
+          class="chef-img"
+        />
+
+        <div class="chef-info">
+          <h2>Emiliano Sánchez</h2>
+          <p>Chef de Estación de Panadería</p>
+
+          <div class="chef-social-networks">
+            <a href="#"><span class="fab fa-facebook"></span></a>
+            <a
+              href="https://www.instagram.com/mttz.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="fab fa-instagram"></span
+            ></a>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a
+              href="https://www.linkedin.com/in/mariomttz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="fab fa-linkedin-in"></span
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="chef">
+        <img
+          src="img/staff/chef_jesus.webp"
+          alt="Imagen del chef Jesús Aguilar"
+          class="chef-img"
+        />
+
+        <div class="chef-info">
+          <h2>Jesús Aguilar</h2>
+          <p>Chef Panadero</p>
+
+          <div class="chef-social-networks">
+            <a href="#"><span class="fab fa-facebook"></span></a>
+            <a
+              href="https://www.instagram.com/mttz.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="fab fa-instagram"></span
+            ></a>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a
+              href="https://www.linkedin.com/in/mariomttz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="fab fa-linkedin-in"></span
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="chef">
+        <img
+          src="img/staff/chef_silvia.webp"
+          alt="Imagen de la chef Silvia García"
+          class="chef-img"
+        />
+
+        <div class="chef-info">
+          <h2>Silvia García</h2>
+          <p>Chef Pastelero</p>
+
+          <div class="chef-social-networks">
+            <a href="#"><span class="fab fa-facebook"></span></a>
+            <a
+              href="https://www.instagram.com/mttz.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="fab fa-instagram"></span
+            ></a>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a
+              href="https://www.linkedin.com/in/mariomttz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="fab fa-linkedin-in"></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Characteristics -->
+    <section id="characteristics">
+      <div class="characteristic">
+        <img
+          src="img/characteristics/handmade.webp"
+          alt="Imagen de una persona amasando"
+          class="characteristic-img"
+        />
+
+        <div class="characteristic-info">
+          <p><span class="fas fa-hand-paper"></span></p>
+          <p class="characteristic-description">Hecho a Mano</p>
+        </div>
+      </div>
+
+      <div class="characteristic">
+        <img
+          src="img/characteristics/fresh.webp"
+          alt="Manos sosteniendo un pan recién horneado"
+          class="characteristic-img"
+        />
+
+        <div class="characteristic-info">
+          <p><span class="fas fa-bread-slice"></span></p>
+          <p class="characteristic-description">Fresco</p>
+        </div>
+      </div>
+
+      <div class="characteristic">
+        <img
+          src="img/characteristics/local_ingredients.webp"
+          alt="Imagen de un campo de trigo"
+          class="characteristic-img"
+        />
+
+        <div class="characteristic-info">
+          <p><span class="fas fa-tractor"></span></p>
+          <p class="characteristic-description">Ingredientes Locales</p>
+        </div>
+      </div>
+
+      <div class="characteristic">
+        <img
+          src="img/characteristics/traditional_baking.webp"
+          alt="Imagen de un horno de leña"
+          class="characteristic-img"
+        />
+
+        <div class="characteristic-info">
+          <p><span class="fas fa-fire"></span></p>
+          <p class="characteristic-description">Horneado Tradicional</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="contact-titles">
+        <h2 class="subtitle">¿Qué opinas de nuestros productos?</h2>
+        <h1 class="title">¡Contáctanos!</h1>
+      </div>
+
+      <form action="" id="contact-form">
+        <div class="form-group">
+          <div class="input-group">
+            <input
+              type="text"
+              id="first-name"
+              placeholder="Nombre(s)"
+              name="first-name"
+              class="input-name"
+            />
+            <i class="fas fa-user"></i>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Apellido(s)"
+              name="last-name"
+              class="input-name"
+            />
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Correo electrónico"
+              name="email"
+              class="input-email"
+            />
+            <i class="fas fa-envelope"></i>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Teléfono"
+              name="phone"
+              class="input-phone"
+            />
+            <i class="fas fa-phone"></i>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <div class="input-group message">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Escríbenos tu mensaje aquí"
+              class="input-message"
+            ></textarea>
+            <i class="fas fa-comment"></i>
+          </div>
+        </div>
+
+        <div class="form-btn">
+          <input type="submit" value="Enviar" class="btn submit-btn" />
+        </div>
+      </form>
+    </section>
+
+    <!-- Contact form alerts -->
+    <div class="contact-alerts">
+      <div id="success" class="contact-alert hide">
+        <span class="alert-icon fas fa-check-circle"></span>
+        <span class="alert-message"
+          >¡Mensaje enviado exitosamente! Gracias por contactarnos.</span
+        >
+      </div>
+
+      <div id="error" class="contact-alert hide">
+        <span class="alert-icon fas fa-exclamation-circle"></span>
+        <span class="alert-message"
+          >¡Error! Por favor, llena todos los campos correctamente.</span
+        >
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-info">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      </div>
+
+      <div class="footer-info">
+        <i class="fas fa-envelope"></i>
+        <span>hola@cempacookie.com</span>
+      </div>
+
+      <div class="footer-info">
+        <i class="fas fa-phone"></i>
+        <span>+52 123-123-123-1</span>
+      </div>
+
+      <div class="footer-info">
+        <i class="fab fa-linkedin-in"></i>
+        <span>linkedin.com/in/mariomttz</span>
+      </div>
+    </footer>
   </body>
 
-  <!-- JavaScript -->
+  <!-- Own Scripts -->
   <script src="js/script.js"></script>
 </html>
