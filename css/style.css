@@ -348,7 +348,7 @@ body {
 }
 
 .chef:hover {
-  flex-grow: 1.5;
+  flex-grow: 3;
 }
 
 .chef-img {
