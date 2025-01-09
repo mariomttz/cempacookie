@@ -35,6 +35,14 @@ git clone https://github.com/mariomttz/cempacookie.git
 
 ## Screenshots 📸
 
+![Slider](img/mockup/slider.png)
+
+![Services](img/mockup/services.png)
+
+![Contact](img/mockup/contact.png)
+
+![Phone](img/mockup/phone.png)
+
 > [!IMPORTANT]
 > Some of the images used in this project were generated with AI. For more details, visit the documentation at [docs/images.md](docs/images.md). 🔍
 
